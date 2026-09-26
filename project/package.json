@@ -1,0 +1,33 @@
+{
+  "name": "pulumi-k8s-guestbook-monitoring",
+  "version": "2.0.0-rc.2",
+  "description": "Pulumi TypeScript project: Kubernetes Guestbook + Prometheus/Grafana monitoring.",
+  "main": "lib/index.js",
+  "engines": {
+    "node": ">=24.21.0 <25"
+  },
+  "license": "Apache-2.0",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --test tests/*.test.cjs",
+    "check": "npm run build && npm test",
+    "release": "npm run check && node scripts/release.mjs",
+    "typecheck": "tsc --noEmit",
+    "preview": "npm run build && pulumi preview",
+    "up": "npm run build && pulumi up",
+    "destroy": "pulumi destroy"
+  },
+  "devDependencies": {
+    "@types/node": "24.13.6",
+    "typescript": "6.0.3",
+    "esbuild": "0.28.2",
+    "fflate": "0.8.3"
+  },
+  "dependencies": {
+    "@pulumi/pulumi": "3.264.0",
+    "@pulumi/kubernetes": "4.34.2",
+    "@opentelemetry/sdk-metrics": "2.11.0",
+    "@opentelemetry/exporter-prometheus": "0.222.0"
+  }
+}

@@ -1,0 +1,15 @@
+.env
+.env.local
+**/.env
+**/.env.local
+**/node_modules/
+**/.npm-cache/
+**/.pulumi/
+**/Pulumi.*.yaml
+!**/Pulumi.dev.yaml.example
+/project/lib/
+/project/generated/
+/project/release/
+*.log
+*.tsbuildinfo
+cdktf.out/

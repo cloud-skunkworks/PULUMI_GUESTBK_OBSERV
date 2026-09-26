@@ -1,0 +1,9 @@
+# Copy to Pulumi.dev.yaml after initializing the dev stack. Never put passwords here.
+config:
+  pulumi-k8s-guestbook-monitoring:cloudProvider: local
+  pulumi-k8s-guestbook-monitoring:appNamespace: guestbook
+  pulumi-k8s-guestbook-monitoring:monitoringNamespace: monitoring
+  pulumi-k8s-guestbook-monitoring:grafanaServiceType: ClusterIP
+  pulumi-k8s-guestbook-monitoring:enableNetworkPolicies: true
+  pulumi-k8s-guestbook-monitoring:enableDashboard: true
+  pulumi-k8s-guestbook-monitoring:enableServiceMonitor: true

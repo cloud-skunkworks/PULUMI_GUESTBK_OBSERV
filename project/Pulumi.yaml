@@ -1,0 +1,7 @@
+name: pulumi-k8s-guestbook-monitoring
+runtime:
+  name: nodejs
+  options:
+    typescript: false
+main: lib/
+description: Portable Kubernetes metrics demo with OpenTelemetry, Prometheus, and Grafana.
